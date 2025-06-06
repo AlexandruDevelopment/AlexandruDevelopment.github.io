@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <style>
-    *{
-        margin: 0;
-    }
+*{
+   margin: 0;
+}
 body{
-    background-color: aqua;
+    background-color: rgb(253, 253, 253);
 }
 header{
     width: 100%;
-    position: relative;
     height: 20vh;
-    background-color: blueviolet;
-    gap: 17vw;
+    background-color: rgba(21, 108, 78, 0.7);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(23, 74, 150, 0.4) solid 2px;
 }
 
 img{
-    position: absolute;
     border-radius: 30px;
     height: 15vh;
     width: auto;
-    top: 50%;
-    left: 30%;
-    transform: translate(-30%, -50%);
+    max-width: 100%;
 }
 .titlu {
-    position: absolute;
     font-size: 35px;
-    left: calc(45% + 120px); /* Ajustează poziția în funcție de imagine */
-    top: 50%;
-    transform: translateY(-50%);
 }
+.baza{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
+footer{
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    position: fixed;
+    bottom: 0%;
+    align-items: center;
+    justify-content: center;
+}
+.general{
+    display: flex;
+    gap: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+.date{
+    display: flex;
+    gap: 6vw;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+
 
 
 </style>
@@ -42,6 +69,8 @@ img{
 <body>
 
 <header>
+    <div class="baza">
+
     <div class="poze">
         <img src="0.jpg" alt="poza1">
     </div>
@@ -50,15 +79,45 @@ img{
         <h1><u>Welcome</u></h1>
 
     </div>
+
+    </div>
 </header>
 
 <div class="central">
 
-    
+    <div class="linie">
+
+    </div>
 
 
 
 </div>
+
+<footer>
+    <div class="general">
+        <div class="date">
+            <div class="contact">
+                <h2 style="font-size: 25px; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">Contacte:</h2><br>
+                Adresa : Str. Giorgiului, Nr. 23;<br>
+                Telefon : 0745 637 289; <br>
+                Email : <a href="#">contact@gmail.com</a>;<br>
+            </div>
+            <div class="program">
+                <h2 style="font-size: 25px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; text-align: center;"> Program : </h2><br>
+                Luni-Vineri : 8.00 - 22.00;<br>
+                Sambata : 8.00 - 21.00; <br>
+                Duminica : 8.00 - 24.00; <br>
+            </div>
+        </div>
+
+        <div class="poza2">
+            <img src="0.jpg" alt="poza1"><br>
+            <p style="text-align: center; color: aliceblue; font-size: 20px;">Un preparat de exceptie!</p>
+        </div>
+
+    </div>
+
+</footer>
 
 
 </body>
